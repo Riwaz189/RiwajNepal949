@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3 - Operating System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        .chapter-header {
+            background: url('chap3.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 100px 20px 60px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-top: 2px solid #00ff88;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1em;
+            line-height: 1.7em;
+        }
+
+        .section img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 4px solid #00ffcc;
+            border-radius: 12px;
+        }
+
+        .side-by-side {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .side-by-side img {
+            max-width: 45%;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            border-top: 2px solid #00ff88;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chapter-header">
+        Chapter 3: Operating System
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chapter1.html">Computer System</a>
+        <a href="chapter2.html">Boolean Algebra</a>
+        <a href="chapter3.html">Operating System</a>
+        <a href="chapter4.html">Application Package</a>
+        <a href="chapter5.html">Programming Concept</a>
+        <a href="chapter6.html">Web Technology</a>
+        <a href="chapter7.html">Multimedia</a>
+        <a href="chapter8.html">Information Security</a>
+    </nav>
+
+    <div class="section">
+        <h2>Operating System</h2>
+        <p>
+            An operating system (OS) is a software that acts as an interface between hardware and the user. It controls and manages 
+            hardware resources such as the CPU, memory, storage devices, and input/output devices. OS provides a user interface 
+            to interact with the computer and manages tasks such as file management, process scheduling, and security. 
+            Examples of operating systems include Microsoft Windows, macOS, and Linux. The OS is the backbone of a computer, 
+            enabling applications to run and providing an environment for users to interact with the system effectively. 
+            It ensures the smooth execution of programs by managing resources efficiently and securely.
+        </p>
+        <img src="OS.jpg" alt="Operating System Image">
+    </div>
+
+    <div class="section">
+        <h2>Functions of Operating System</h2>
+        <p>
+            The operating system performs several crucial functions that are necessary for the efficient operation of a computer system. 
+            Some of these functions include:
+        </p>
+        <ul>
+            <li><strong>Process Management:</strong> Manages processes in a system, including scheduling and multitasking.</li>
+            <li><strong>Memory Management:</strong> Allocates and deallocates memory to various processes.</li>
+            <li><strong>File Management:</strong> Organizes and controls access to files and directories.</li>
+            <li><strong>Device Management:</strong> Controls hardware devices such as printers, hard drives, and network devices.</li>
+            <li><strong>Security and Access Control:</strong> Protects system resources from unauthorized access.</li>
+            <li><strong>Task Scheduling:</strong> Assigns CPU time to processes based on priorities.</li>
+            <li><strong>Resource Allocation:</strong> Ensures that system resources are allocated efficiently.</li>
+            <li><strong>Input/Output Management:</strong> Manages the flow of input and output between the computer and the user.</li>
+            <li><strong>Error Detection and Handling:</strong> Monitors and handles errors in hardware and software.</li>
+        </ul>
+        <img src="Fos.jpg" alt="Functions of Operating System Image">
+    </div>
+
+    <div class="section">
+        <h2>Types of Operating Systems</h2>
+        <p>
+            Operating systems can be categorized in several ways. Based on processing, we have:
+            <br><strong>Single-tasking OS:</strong> Can handle one task at a time (e.g., early MS-DOS).
+            <br><strong>Multitasking OS:</strong> Can handle multiple tasks simultaneously (e.g., modern Windows, Linux).
+            <br>Based on user interface, the OS can be categorized as:
+            <br><strong>Command-line Interface (CLI):</strong> The user interacts with the OS by typing commands (e.g., Linux terminal).
+            <br><strong>Graphical User Interface (GUI):</strong> The user interacts with visual icons and menus (e.g., Windows, macOS).
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Common Terms Used in Operating Systems</h2>
+        <ul>
+            <li><strong>Kernel:</strong> The core component of the OS that manages hardware and software resources.</li>
+            <li><strong>Shell:</strong> The interface that allows users to interact with the kernel.</li>
+            <li><strong>Process:</strong> A program in execution.</li>
+            <li><strong>Thread:</strong> A smaller unit of a process that can be executed independently.</li>
+            <li><strong>Virtual Memory:</strong> A memory management technique that uses disk storage to extend the apparent size of RAM.</li>
+            <li><strong>File System:</strong> A system for organizing and storing files on storage devices.</li>
+            <li><strong>Multitasking:</strong> Running multiple processes or programs simultaneously.</li>
+            <li><strong>System Call:</strong> A request from a program to the operating system for a service.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>QnAs</h2>
+        <ul>
+            <li><strong>Q1:</strong> What is an operating system and what are its main functions?<br><strong>Ans:</strong> An operating system is software that manages hardware and software resources, providing an interface for user interaction and performing tasks like memory management, file management, and process scheduling.</li>
+            <li><strong>Q2:</strong> How does the operating system manage memory?<br><strong>Ans:</strong> The operating system allocates memory to different processes, manages the free space, and ensures that processes do not overwrite each other’s memory.</li>
+            <li><strong>Q3:</strong> What is the difference between CLI and GUI operating systems?<br><strong>Ans:</strong> CLI requires users to input text commands, whereas GUI allows users to interact with visual elements such as icons and buttons.</li>
+            <li><strong>Q4:</strong> Explain multitasking in operating systems.<br><strong>Ans:</strong> Multitasking allows an OS to execute multiple processes at the same time by quickly switching between tasks.</li>
+            <li><strong>Q5:</strong> What is the role of the kernel in an operating system?<br><strong>Ans:</strong> The kernel is the core part of the OS that manages system resources, including the CPU, memory, and hardware devices.</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; Riwaj Nepal 2025
+    </footer>
+
+</body>
+</html>

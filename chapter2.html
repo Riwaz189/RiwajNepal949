@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 - Boolean Algebra</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        .chapter-header {
+            background: url('chap2.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 100px 20px 60px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-top: 2px solid #00ff88;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1em;
+            line-height: 1.7em;
+        }
+
+        .section img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 4px solid #00ffcc;
+            border-radius: 12px;
+        }
+
+        .side-by-side {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .side-by-side img {
+            max-width: 45%;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            border-top: 2px solid #00ff88;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chapter-header">
+        Chapter 2: Boolean Algebra
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chapter1.html">Computer System</a>
+        <a href="chapter2.html">Boolean Algebra</a>
+        <a href="chapter3.html">Computer Software</a>
+        <a href="chapter4.html">Application Package</a>
+        <a href="chapter5.html">Programming Concept</a>
+        <a href="chapter6.html">Web Technology</a>
+        <a href="chapter7.html">Multimedia</a>
+        <a href="chapter8.html">Information Security</a>
+    </nav>
+
+    <div class="section">
+        <h2>Number System</h2>
+        <p>
+            A number system is a way of expressing numbers in a consistent manner using digits or other symbols. 
+            The most common number system is the decimal system, which uses digits from 0 to 9. In digital electronics, 
+            binary, octal, and hexadecimal number systems are widely used. The binary system uses only two digits, 0 and 1, 
+            which are ideal for representing the two states of electrical signals. Octal and hexadecimal are used as shorthand 
+            notations for binary numbers, as they are easier for humans to read and write while still being easily converted 
+            to binary.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Basic Boolean Laws</h2>
+        <p>
+            Boolean algebra involves a set of rules that govern binary variables. Some important laws in Boolean algebra include:
+        </p>
+        <ul>
+            <li><strong>Identity Law:</strong> A + 0 = A, A · 1 = A</li>
+            <li><strong>Null Law:</strong> A + 1 = 1, A · 0 = 0</li>
+            <li><strong>Idempotent Law:</strong> A + A = A, A · A = A</li>
+            <li><strong>Complement Law:</strong> A + A' = 1, A · A' = 0</li>
+            <li><strong>Double Negation Law:</strong> (A')' = A</li>
+            <li><strong>Distributive Law:</strong> A · (B + C) = A · B + A · C</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Proof of De Morgan’s Law</h2>
+        <p>
+            De Morgan's Law consists of two important rules for the negation of expressions involving AND and OR operations:
+            <br><strong>De Morgan's First Law:</strong> (A · B)' = A' + B'
+            <br><strong>De Morgan's Second Law:</strong> (A + B)' = A' · B'
+            <br>These laws can be verified using truth tables. For instance, let’s take the first law:
+        </p>
+        <table border="1" style="width:100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>A · B</th>
+                    <th>(A · B)'</th>
+                    <th>A' + B'</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            From the table above, we can confirm that the result of (A · B)' is the same as A' + B', 
+            thus proving De Morgan's First Law.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Logic Gates</h2>
+        <p>
+            Logic gates are the building blocks of digital circuits. They perform logical operations on one or more inputs 
+            to produce a single output. Below are the 5 basic logic gates:
+        </p>
+        <ul>
+            <li><strong>AND Gate:</strong> Outputs 1 only if both inputs are 1. <br><img src="And.jpg" alt="AND Gate"></li>
+            <li><strong>OR Gate:</strong> Outputs 1 if at least one input is 1. <br><img src="Or.jpg" alt="OR Gate"></li>
+            <li><strong>NOT Gate:</strong> Inverts the input; if input is 1, output is 0, and vice versa. <br><img src="Not.jpg" alt="NOT Gate"></li>
+            <li><strong>XOR Gate:</strong> Outputs 1 if inputs are different, otherwise 0. <br><img src="Xor.jpg" alt="XOR Gate"></li>
+            <li><strong>NAND Gate:</strong> Outputs 0 only if both inputs are 1. <br><img src="Nand.jpg" alt="NAND Gate"></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>QnAs</h2>
+        <ul>
+            <li><strong>Q1:</strong> What is Boolean Algebra?<br><strong>Ans:</strong> Boolean algebra is a branch of mathematics dealing with operations on binary variables.</li>
+            <li><strong>Q2:</strong> What is the Identity Law?<br><strong>Ans:</strong> The Identity Law states that A + 0 = A and A · 1 = A.</li>
+            <li><strong>Q3:</strong> What does De Morgan's Law state?<br><strong>Ans:</strong> De Morgan’s Law provides two rules for negating AND and OR expressions.</li>
+            <li><strong>Q4:</strong> What is the difference between AND and OR gates?<br><strong>Ans:</strong> AND requires both inputs to be 1, while OR outputs 1 if at least one input is 1.</li>
+            <li><strong>Q5:</strong> What is the function of a NOT gate?<br><strong>Ans:</strong> A NOT gate inverts the input value (0 becomes 1, and 1 becomes 0).</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; Riwaj Nepal 2025
+    </footer>
+
+</body>
+</html>

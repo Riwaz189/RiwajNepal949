@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5 - Programming Concepts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        .chapter-header {
+            background: url('chap5.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 100px 20px 60px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-top: 2px solid #00ff88;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        .section p, .section ul, .section table {
+            font-size: 1.1em;
+            line-height: 1.7em;
+        }
+
+        .section img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 4px solid #00ffcc;
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #00ffcc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1e1e1e;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            border-top: 2px solid #00ff88;
+            margin-top: 50px;
+        }
+
+        code {
+            display: block;
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chapter-header">
+        Chapter 5: Programming Concepts
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chapter1.html">Computer System</a>
+        <a href="chapter2.html">Boolean Algebra</a>
+        <a href="chapter3.html">Computer Software</a>
+        <a href="chapter4.html">Application Package</a>
+        <a href="chapter5.html">Programming Concept</a>
+        <a href="chapter6.html">Web Technology</a>
+        <a href="chapter7.html">Multimedia</a>
+        <a href="chapter8.html">Information Security</a>
+    </nav>
+
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>
+            Programming languages are essential tools used to write software that runs on computers and digital devices. They allow developers to create instructions that a computer can follow to perform specific tasks. From system software like operating systems to mobile applications, all rely on programming languages. These languages range from low-level machine codes to high-level, human-readable formats that simplify development. Understanding programming languages is the first step toward mastering the art of coding, which powers much of the technology around us.
+        </p>
+        <img src="program.jpg" alt="Programming Introduction">
+    </div>
+
+    <div class="section">
+        <h2>Qualities of a Good Program</h2>
+        <p>
+            A good program is one that effectively solves the intended problem while maintaining code simplicity and performance. It should be reliable, efficient, easy to understand, and maintainable. Moreover, a quality program must be adaptable to various environments and be secure to protect against vulnerabilities. Portability, robustness, and clarity are key attributes that ensure the program's success in real-world applications. Below are the essential qualities every well-designed program should have:
+        </p>
+        <ul>
+            <li>Correctness</li>
+            <li>Efficiency</li>
+            <li>Readability</li>
+            <li>Maintainability</li>
+            <li>Portability</li>
+            <li>Robustness</li>
+            <li>Reusability</li>
+            <li>Security</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Types of Programming Languages</h2>
+        <p>
+            Programming languages are categorized based on their level of abstraction from machine hardware. They include machine-level, assembly-level, and high-level languages. High-level languages like Python, Java, and C++ are closer to human languages and easier to learn, while low-level languages like Assembly provide more control over hardware but are harder to understand. Scripting, object-oriented, and procedural paradigms also define how programs are structured in each language.
+        </p>
+    </div>
+
+<div class="section">
+    <h2>Types of Programming Languages</h2>
+    <h3>Low-Level Languages</h3>
+    <p>
+        Low-level programming languages are closer to machine code and provide minimal abstraction from the computer's architecture. 
+        They are typically divided into two types:
+    </p>
+    <h4>Machine Language</h4>
+    <p>
+        Machine language consists of binary code that is directly executed by the computer's hardware. It is the lowest level of programming and is machine-specific, meaning the program written in machine language is tailored to the specific type of processor it runs on. It is not human-readable and is challenging to work with.
+    </p>
+    <h4>Assembly Language</h4>
+    <p>
+        Assembly language uses human-readable mnemonics that correspond directly to machine language instructions. It is a step above machine language in terms of readability but still requires an understanding of the underlying hardware. It is faster than high-level languages but more difficult to code and maintain.
+    </p>
+
+    <h3>High-Level Languages</h3>
+    <p>
+        High-level programming languages are more abstract and easier to understand than low-level languages. They are designed to be more user-friendly and are portable across different types of hardware. Some examples include C, Python, Java, and JavaScript. They come in several generations:
+    </p>
+    <h4>Third-Generation Languages (3GL)</h4>
+    <p>
+        Third-generation languages, such as C and Java, are high-level languages that provide a significant level of abstraction from machine code. They allow programmers to write code that is more readable and portable across different systems, making them much easier to work with compared to assembly or machine language.
+    </p>
+    <h4>Fourth-Generation Languages (4GL)</h4>
+    <p>
+        Fourth-generation languages are closer to natural human language, aiming for simplicity and efficiency in programming. They allow developers to specify what the program should do rather than how to do it. Examples include SQL and MATLAB, which are used in database management and scientific computing.
+    </p>
+    <h4>Fifth-Generation Languages (5GL)</h4>
+    <p>
+        Fifth-generation languages focus on solving problems using constraints, and they are primarily used in artificial intelligence (AI). These languages allow developers to express problems in terms of logic and constraints, rather than explicitly stating the steps. Prolog and Mercury are examples of 5GL.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Language Translators</h2>
+    <p>
+        Language translators are programs that convert source code written in high-level programming languages into machine-readable code. There are three main types: assembler, compiler, and interpreter. Each of these translators has a specific role in transforming human-readable code into something that a computer can execute.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Assembler</h2>
+    <p>
+        An assembler is a program that converts assembly language code into machine code. It translates mnemonics and symbols into binary instructions that the computer's processor can understand and execute. Assembly language is often used for system programming and embedded systems, where direct control over hardware is necessary.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Compiler</h2>
+    <p>
+        A compiler is a program that translates a complete source code file written in a high-level language into machine code or an intermediate code all at once. The output is usually a binary executable file. This translation process happens before execution, and any errors are detected during compilation.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Interpreter</h2>
+    <p>
+        An interpreter is a program that translates and executes code line by line. Unlike a compiler, which translates the entire program at once, an interpreter works on the code incrementally, providing immediate feedback for errors. It is useful for dynamic languages like Python, where interactive execution is often required.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Difference Between Compiler, Interpreter, and Assembler</h2>
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th>Compiler</th>
+            <th>Interpreter</th>
+            <th>Assembler</th>
+        </tr>
+        <tr>
+            <td>Translation Method</td>
+            <td>Translates the entire code at once</td>
+            <td>Translates code line by line</td>
+            <td>Translates assembly language into machine code</td>
+        </tr>
+        <tr>
+            <td>Execution</td>
+            <td>Generates an executable file</td>
+            <td>Executes the program immediately</td>
+            <td>Produces binary code for hardware execution</td>
+        </tr>
+        <tr>
+            <td>Error Detection</td>
+            <td>All errors are detected during compilation</td>
+            <td>Errors are detected as the program runs</td>
+            <td>Errors are detected during assembly</td>
+        </tr>
+        <tr>
+            <td>Speed</td>
+            <td>Faster execution after compilation</td>
+            <td>Slower execution due to line-by-line translation</td>
+            <td>Fast execution for specific hardware</td>
+        </tr>
+        <tr>
+            <td>Example Languages</td>
+            <td>C, Java</td>
+            <td>Python, Ruby</td>
+            <td>Assembly Language</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Syntax and Semantics</h2>
+    <p>
+        Syntax refers to the structure of statements in a programming language, including rules for forming valid expressions, declarations, and statements. Semantics, on the other hand, defines the meaning of these statements, describing the logic or behavior that occurs when the program is executed.
+    </p>
+</div>
+<div class="section">
+    <h2>Errors and Types of Errors in Programming</h2>
+    <p>
+        Errors in programming are flaws or mistakes in the code that prevent it from executing properly. They are common during the development process and are classified into different types. Understanding and fixing these errors is a critical skill for any programmer.
+    </p>
+    <ul>
+        <li><strong>Syntax Errors:</strong> Occur when code violates grammar rules of the programming language.</li>
+        <li><strong>Semantic Errors:</strong> Code runs but does not produce the expected result due to logic flaws.</li>
+        <li><strong>Runtime Errors:</strong> Occur during program execution, like dividing by zero or accessing invalid memory.</li>
+        <li><strong>Logical Errors:</strong> Produce incorrect output due to wrong algorithms or conditions.</li>
+        <li><strong>Compilation Errors:</strong> Detected by the compiler when source code cannot be converted to machine code.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Common Terminologies</h2>
+    <ul>
+        <li><strong>Data Types:</strong> Classifications of data such as integer, float, char, and string used in programming.</li>
+        <li><strong>Variable:</strong> A named storage location used to hold data that can be changed during program execution.</li>
+        <li><strong>Constant:</strong> A value that cannot be altered once defined in a program.</li>
+        <li><strong>Operands:</strong> The values or variables on which operations are performed.</li>
+        <li><strong>Operators:</strong> Symbols that tell the compiler to perform specific operations like +, -, *, /.</li>
+        <li><strong>Expression:</strong> A combination of variables, constants, and operators that yields a result.</li>
+        <li><strong>Statement:</strong> A single line of code that performs an action, such as assignment or control flow.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Program Design Tools</h2>
+    <p>
+        Program design tools are aids like algorithms and flowcharts used to plan out the logic and steps before coding.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Algorithm</h2>
+    <p>
+        An algorithm is a finite sequence of logical steps written in a specific order to solve a particular problem. It is independent of programming languages and focuses on planning the logic clearly before implementation. Algorithms are essential in structuring thinking and building efficient solutions.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Rules for Writing an Algorithm</h2>
+    <ul>
+        <li>Start with a title and a clear description.</li>
+        <li>Begin with the word "Start" and end with "Stop".</li>
+        <li>Write each step clearly and concisely.</li>
+        <li>Steps should be numbered sequentially.</li>
+        <li>Use meaningful names for variables and operations.</li>
+    </ul>
+    <img src="ALGO.png	" alt="Algorithm Example">
+</div>
+
+<div class="section">
+    <h2>Flowchart</h2>
+    <p>
+        A flowchart is a diagram that represents the logical flow of a program using symbols and arrows. It visually outlines the sequence of operations, decisions, and loops in a structured format. Flowcharts help in understanding, analyzing, and communicating program logic.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Flowchart Symbols</h2>
+    <ul>
+        <li><strong>Terminator:</strong> Oval symbol used to represent Start and End points.</li>
+        <li><strong>Process:</strong> Rectangle used to show processing tasks or actions.</li>
+        <li><strong>Decision:</strong> Diamond shape used for branching conditions (Yes/No).</li>
+        <li><strong>Input/Output:</strong> Parallelogram used to show input or output operations.</li>
+        <li><strong>Arrows:</strong> Indicate the direction or flow of logic.</li>
+    </ul>
+    <img src="flowchart.png" alt="Flowchart Symbols">
+</div>
+
+<div class="section">
+    <h2>Example Flowcharts</h2>
+    <img src="flowex.png" alt="Flowchart Example 1">
+    <img src="flowex2.jpg" alt="Flowchart Example 2">
+</div>
+
+<div class="section">
+    <h2>C Programming Language</h2>
+    <p>
+        C is a high-level general-purpose programming language developed in the 1970s. It is known for its performance, simplicity, and powerful features like pointers and low-level memory access. It serves as the foundation for many modern languages such as C++, Java, and Python.
+    </p>
+    <img src="cp.jpg" alt="C Programming Language">
+</div>
+
+<div class="section">
+    <h2>Features of C Language</h2>
+    <ul>
+        <li>Simple and easy to learn</li>
+        <li>Structured programming approach</li>
+        <li>Efficient and fast</li>
+        <li>Rich library support</li>
+        <li>Portable across platforms</li>
+        <li>Supports low-level memory access</li>
+        <li>Modular programming support</li>
+        <li>Extensive use of functions and recursion</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Common Terminologies in C Language</h2>
+    <ul>
+        <li><strong>Header Files:</strong> Files containing standard functions and macros (e.g., stdio.h).</li>
+        <li><strong>Main Function:</strong> The entry point of every C program.</li>
+        <li><strong>printf():</strong> Function used to print output to the screen.</li>
+        <li><strong>scanf():</strong> Function used to take input from the user.</li>
+        <li><strong>Variables:</strong> Containers for storing data values.</li>
+        <li><strong>Data Types:</strong> Define the type of data (int, float, char).</li>
+        <li><strong>Operators:</strong> Symbols used for operations (+, -, *, /).</li>
+        <li><strong>Control Statements:</strong> Direct the flow of the program (if, for, while).</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Control Structures in C</h2>
+    <p>
+        Control structures determine the flow of execution in a C program. They help in decision-making, looping, and branching based on conditions.
+    </p>
+    <ul>
+        <li><strong>Conditional:</strong> if, if-else, nested if</li>
+        <li><strong>Looping:</strong> for, while, do-while</li>
+        <li><strong>Branching:</strong> switch, break, continue, goto</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Arrays in C</h2>
+    <p>
+        An array in C is a collection of elements of the same data type stored in contiguous memory locations. It is used to store multiple values in a single variable name, making it easier to manage and access data through indexing. Arrays can be one-dimensional, two-dimensional (matrices), or multi-dimensional. For example, an array of integers can store the marks of 100 students efficiently using loops instead of separate variables.
+    </p>
+</div>
+    <div class="section">
+        <h2>QnAs</h2>
+
+        <h3>Q1: Write a program to find whether an input number is prime or not.</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num, i, flag = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for (i = 2; i &lt;= num / 2; ++i) {
+        if (num % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if (num == 1)
+        printf("1 is neither prime nor composite.");
+    else {
+        if (flag == 0)
+            printf("%d is a prime number.", num);
+        else
+            printf("%d is not a prime number.", num);
+    }
+    printf("\nRiwaj Nepal");
+    return 0;
+}
+        </pre>
+        <img src="o1.png" alt="Prime Number Output">
+
+        <h3>Q2: Write a program to find the factorial of an input number.</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, i;
+    unsigned long long factorial = 1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    if (n &lt; 0)
+        printf("Factorial of a negative number doesn't exist.");
+    else {
+        for (i = 1; i &lt;= n; ++i) {
+            factorial *= i;
+        }
+        printf("Factorial of %d = %llu", n, factorial);
+    }
+    printf("\nRiwaj Nepal");
+    return 0;
+}
+        </pre>
+        <img src="o2.png" alt="Factorial Output">
+
+        <h3>Q3: Write a program to check if the input number is a palindrome or not.</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num, reversed = 0, remainder, original;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    original = num;
+    while (num != 0) {
+        remainder = num % 10;
+        reversed = reversed * 10 + remainder;
+        num /= 10;
+    }
+    if (original == reversed)
+        printf("%d is a palindrome.", original);
+    else
+        printf("%d is not a palindrome.", original);
+    printf("\nRiwaj Nepal");
+    return 0;
+}
+        </pre>
+        <img src="o3.png" alt="Palindrome Output">
+
+        <h3>Q4: Write a program in C to generate Fibonacci series for n terms.</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, t1 = 0, t2 = 1, nextTerm;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series: ");
+    for (int i = 1; i &lt;= n; ++i) {
+        printf("%d ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+    printf("\nRiwaj Nepal");
+    return 0;
+}
+        </pre>
+        <img src="o4.png" alt="Fibonacci Output">
+
+        <h3>Q5: Write a program in C to display whether the number is perfect or not.</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for (int i = 1; i &lt; num; i++) {
+        if (num % i == 0)
+            sum += i;
+    }
+    if (sum == num)
+        printf("%d is a perfect number.", num);
+    else
+        printf("%d is not a perfect number.", num);
+    printf("\nRiwaj Nepal");	
+    return 0;
+}
+        </pre>
+        <img src="o5.png" alt="Perfect Number Output">
+    </div>
+
+    <footer>
+        &copy; Riwaj Nepal 2025
+    </footer>
+
+</body>
+</html>

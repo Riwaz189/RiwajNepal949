@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 - Web Technologies</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        .chapter-header {
+            background: url('chap6.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 100px 20px 60px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-top: 2px solid #00ff88;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.7em;
+        }
+
+        .section img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 4px solid #00ffcc;
+            border-radius: 12px;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            border-top: 2px solid #00ff88;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chapter-header">
+        Chapter 6: Web Technologies
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chapter1.html">Computer System</a>
+        <a href="chapter2.html">Boolean Algebra</a>
+        <a href="chapter3.html">Computer Software</a>
+        <a href="chapter4.html">Application Package</a>
+        <a href="chapter5.html">Programming Concept</a>
+        <a href="chapter6.html">Web Technology</a>
+        <a href="chapter7.html">Multimedia</a>
+        <a href="chapter8.html">Information Security</a>
+    </nav>
+
+    <div class="section">
+        <h2>History of Internet</h2>
+        <p>
+            The internet began as a research project in the 1960s called ARPANET, funded by the U.S. Department of Defense. It was initially developed to connect different computers for academic and military use. Over time, it evolved into a vast global communication network. The introduction of the World Wide Web in 1991 by Tim Berners-Lee made the internet accessible and user-friendly. This revolutionary invention transformed communication, commerce, education, and entertainment, making the internet an essential part of modern life.
+        </p>
+        <img src="historia.jpg" alt="History of Internet">
+    </div>
+
+    <div class="section">
+        <h2>Terminologies in Web Technologies</h2>
+        <p>
+            Web technologies include a variety of components that enable communication and content sharing over the internet. A <strong>webpage</strong> is a single document on the web, while a <strong>website</strong> is a collection of related webpages. A <strong>web browser</strong> is software that allows users to access webpages, such as Chrome or Firefox. <strong>Servers</strong> are powerful computers that host websites and respond to requests from clients (browsers). <strong>URL</strong> stands for Uniform Resource Locator and specifies the address of a resource. <strong>HTTP/HTTPS</strong> are protocols used to transfer data between client and server.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>HTML (HyperText Markup Language)</h2>
+        <p>
+            HTML is the standard markup language used to create the structure of webpages. It defines how content is organized using elements like headings, paragraphs, images, and links. Each element is represented by tags enclosed in angle brackets. HTML forms the backbone of any website and ensures that the content is correctly displayed in web browsers. Although it doesn’t handle the design or interactivity, HTML is essential for page content and layout. It's easy to learn and widely used in web development.
+        </p>
+        <img src="html.jpg" alt="HTML Structure">
+    </div>
+
+    <div class="section">
+        <h2>Tags in HTML</h2>
+        <p>
+            HTML tags are predefined keywords used to mark up content in an HTML document. They usually come in pairs: an opening tag (e.g., &lt;p&gt;) and a closing tag (e.g., &lt;/p&gt;). Common tags include &lt;h1&gt; to &lt;h6&gt; for headings, &lt;a&gt; for hyperlinks, &lt;img&gt; for images, &lt;ul&gt; and &lt;li&gt; for lists, and &lt;div&gt; for division of content. Tags help browsers understand how to display the content. Understanding the correct usage of tags is fundamental to creating functional and accessible webpages.
+        </p>
+        <img src="htmtag.png" alt="HTML Tags">
+    </div>
+
+    <div class="section">
+        <h2>CSS (Cascading Style Sheets)</h2>
+        <p>
+            CSS is a style sheet language used to describe the look and formatting of a document written in HTML. While HTML structures content, CSS defines the visual appearance like colors, fonts, layout, and spacing. CSS enhances the user experience by making web interfaces more attractive and responsive. It allows developers to separate design from content, promoting cleaner code and easier maintenance. CSS can be applied in various ways to suit different needs.
+        </p>
+        <img src="css.png" alt="CSS Design">
+    </div>
+
+    <div class="section">
+        <h2>Types of CSS</h2>
+        <p>
+            There are three main types of CSS:
+            <br><strong>Inline CSS:</strong> Applied directly within an HTML tag using the style attribute. Useful for small changes.
+            <br><strong>Internal CSS:</strong> Defined within a &lt;style&gt; element inside the &lt;head&gt; section. Affects only the current page.
+            <br><strong>External CSS:</strong> Written in a separate .css file and linked to HTML pages. Best for consistent styling across multiple pages.
+            These methods allow developers flexibility in styling webpages according to project requirements.
+        </p>
+    </div>
+
+    <footer>
+        &copy; Riwaj Nepal 2025
+    </footer>
+
+</body>
+</html>
